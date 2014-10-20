@@ -1,7 +1,189 @@
+/* Base styles */
+
+header{
+	font-family: 'Favorit', sans-serif;
+	font-weight: regular;
+	font-size: 125px;
+	line-height: 0.7em;
+	padding-left:50px;
+	padding-top:20px;
+	text-align:center;
+}
+
 body {
-	font-family: 'Favorit', 'Helvetica', sans-serif;
-  font-size: 26px;
-	margin-bottom:150px;
+	font-family: 'Favorit', sans-serif;
+	font-size: 26px;
 	background-color:black;
 	color:white;
+	overflow-x:hidden;
 }
+
+footer{
+	font-size:12px;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+/* Navbar */
+
+.navbar {
+	padding-top:10px;
+	padding-right:30px;
+	top:0;
+	right:0;
+	position:absolute;
+}
+
+.navbar a {
+	color:white;
+	text-decoration:none;
+}
+
+.navbar a:hover {
+	color:white;
+	padding-bottom:5px;
+	border-bottom:1px solid white;
+}
+
+.navbar a:active {
+	color:white;
+	border-bottom:1px solid white;
+}
+
+
+/* Logo Navigation */
+
+.endless {
+	font-size:38px;
+	bottom:0;
+	left:0;
+	position:fixed;
+	padding-left:30px;
+	padding-bottom:10px;
+
+}
+
+.possibilities {
+	font-size:38px;
+	bottom:0;
+	right:0;
+	position:fixed;
+	padding-left:30px;
+	padding-top:10px;
+
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+/* Elements */
+
+.logoimg {
+	padding-top:50px;
+	text-align:center;
+}
+
+.info_wrapper{
+	padding-top:200px;
+	padding-bottom:400px;
+	width:100%;
+	text-align:center;
+	color:white;
+	font-size:150px;
+}
+
+.name_wrapper {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+		margin-left:-10px;
+		margin-right:-10px;
+		background-color:white;
+		color:black;
+		padding-top:100px;
+		padding-bottom:100px;
+		text-align:center;
+		text-decoration:none;
+		font-size:64px;
+		line-height:70px;
+}
+
+.name_wrapper a{
+	color:black;
+	text-decoration:none;
+
+	-webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.name_wrapper a:hover{
+	color:lightgrey;
+}
+
+
+
+/* Typography */
+
+h1 {
+	font-size:72px;
+	text-decoration:none;
+	text-transform:normal;
+	text-align:center;
+	font-weight:normal;
+	font-size:72px;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p{
+
+}
+
+
+
+/* Line tryouts
+
+
+.cross-LU{
+	left:0;
+	top:0;
+	fill:none;
+	stroke:white;
+	stroke-width:3;
+}
+
+.cross-RU{
+	right:0;
+	top:0;
+	fill:none;
+	stroke:white;
+	stroke-width:3;
+}
+
+.cross-RB{
+	right:0;
+	bottom:0;
+	fill:none;
+	stroke:white;
+	stroke-width:3;
+}
+
+.cross-LB{
+	left:0;
+	bottom:0;
+	fill:none;
+	stroke:white;
+	stroke-width:3;
+}*/
