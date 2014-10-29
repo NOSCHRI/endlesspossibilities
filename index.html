@@ -4,18 +4,23 @@
 <head>
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/lightbox.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/scrolltop.js"></script>
 <title>Endless Possibilities</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
 <link rel="stylesheet" href="css/lightbox.css"/>
+
+
 </head>
 
 <body>
 <!--- Navigation ---->
 <div class="navbar">
-  <a href="information.html">Information</a>
-  <a href="mailto:endlesspossibilites@me.com">Contact</a>
+  <nav class="cl-effect-2">
+    <a href="information.html"><span data-hover="Information">Information</span></a>
+  </nav>
 </div>
 
 
@@ -40,7 +45,7 @@
 <div class="info_wrapper">
 16.01.2014<br>
 -<br>
-22.01.2014<br>
+25.01.2014<br>
 <br>
 Kunsthal<br>
 Rotterdam<br>
@@ -48,65 +53,79 @@ Rotterdam<br>
 
 <div class="content">
 <p>
-  32 Photography students from both Royal Academy of Art, the Hague and Ecal in Lausanne will showcase their latest work regarding the topic of the future of our human race. Come visit the Kunsthal in Rotterdam for free.</p>
+  Since September, we have been exploring the scope and elasticity of the theme Endless Possibilities. The results we’ll present in an exhibition we ourselves will organize and build from scratch. We’d love to see you there.
+<br><br>
+
+- The 3rd-year photography students of the Royal Academy of Art, The Hague</p>
 </div>
 
 
 <div class="name_wrapper">
-  <a href="students/name.html">Larissa<br> Ambachtsheer</a><br><br>
-  <a href="students/name.html">Eline<br> Benjaminsen</a><br><br>
-  <a href="students/name.html">Ageniet<br> Berkers</a><br><br>
-  <a href="students/name.html">Thomas<br> Boeren</a><br><br>
-  <a href="students/name.html">Maarten<br> Broekhuizen</a><br><br>
-  <a href="students/name.html">Annelies<br> Bruins</a><br><br>
-  <a href="students/name.html">Jesse<br> Budel</a><br><br>
+  <a href="http://www.cargocollective.com/larissaambachtsheer" target="blank_">Larissa<br> Ambachtsheer</a><br><br>
+  <a href="students/name.html" target="blank_">Annelies<br> Bruins</a><br><br>
+  <a href="http://www.jessebudel.com" target="blank_">Jesse<br> Budel</a><br><br>
   <a href="students/name.html">Jasmijn<br> Bul</a><br><br>
-  <a href="students/name.html">Lois<br> Cohen</a><br><br>
-  <a href="students/name.html">Eva<br> Czaya</a><br><br>
-  <a href="students/name.html">Tanya<br> Eftal</a><br><br>
-  <a href="students/name.html">Fabian<br> Fraikin</a><br><br>
-  <a href="students/name.html">Jaimy<br> Gail</a><br><br>
-  <a href="students/name.html">Katarína<br> Gališinová</a><br><br>
-  <a href="students/name.html">Sabine<br> Grootendorst</a><br><br>
-  <a href="students/name.html">Karl<br> Ketamo</a><br><br>
-  <a href="students/name.html">George<br> Knegtel</a><br><br>
-  <a href="students/name.html">Liv<br> Liberg</a><br><br><br>
-  <a href="students/name.html">Martijn<br> Mendel</a><br><br>
-  <a href="students/name.html">Matthijs<br> Mentink</a><br><br>
+  <a href="http://www.loiscohen.nl" target="blank_">Lois<br> Cohen</a><br><br>
+  <a href="students/name.html">Jaimy<br> de Gier</a><br><br>
+  <a href="http://www.livylva.com" target="blank_">Liv<br> Liberg</a><br><br>
+  <a href="http://www.martijnmendel.com" target="blank_">Martijn<br> Mendel</a><br><br>
+  <a href="http://www.matthijsmentink.nl" target="blank_">Matthijs<br> Mentink</a><br><br>
   <a href="students/name.html">Imara<br> Paterno Castello</a><br><br>
-  <a href="students/name.html">Joppe<br> Put</a><br><br>
-  <a href="students/name.html">Annemiek<br> Schout</a><br><br>
-  <a href="students/name.html">Muriel<br> Schouten</a><br><br>
-  <a href="students/name.html">Lise<br> Straatsma</a><br><br>
+  <a href="http://www.annemiekschout.com" target="blank_">Annemiek<br> Schout</a><br><br>
   <a href="students/name.html">Mirjam<br> Suiker</a><br><br>
-  <a href="students/name.html">Liza<br> Szabó</a><br><br>
-  <a href="students/name.html">Gilleam<br> Trapenberg</a><br><br>
+  <a href="http://www.lisaszabo.com" target="blank_">Lisa<br> Szabo</a><br><br>
+  <a href="http://www.renatevandertogt.com" target="blank_">Renate<br> van der Togt</a><br><br>
+  <a href="http://www.nitavera.net" target="blank_">Nita<br> Vera</a><br><br>
+  <a href="http://www.vanhavirta.fi" target="blank_">Kimmo<br> Virtanen</a><br><br>
+  <a href="http://www.cargocollective.com/charlottevandezande" target="blank_">Charlotte<br> van de Zande</a><br><br>
+
+  <a href="http://www.elinebenjaminsen.com" target="blank_">Eline<br> Benjaminsen</a><br><br>
+  <a href="http://www.thomasboeren.nl" target="blank_">Thomas<br> Boeren</a><br><br>
   <a href="students/name.html">Wiosna<br> van Bon</a><br><br>
-  <a href="students/name.html">Lisa<br> van Casand</a><br><br>
-  <a href="students/name.html">Charlotte<br> van de Zande</a><br><br>
+  <a href="students/name.html">Maarten<br> Broekhuizen</a><br><br>
+  <a href="http://www.lisavancasand.nl" target="blank_">Lisa<br> van Casand</a><br><br>
+  <a href="http://www.evaczaya.de" target="blank_">Eva<br> Czava</a><br><br>
+  <a href="http://www.cargocollective.com/tanyaeftal" target="blank_">Tanya<br> Eftal</a><br><br>
+  <a href="http://www.fabianfraikin.com" target="blank_">Fabian<br> Fraikin</a><br><br>
+  <a href="students/name.html">Katarina<br> Galisnova</a><br><br>
+  <a href="http://www.sabinegrootendorst.com" target="blank_">Sabine<br> Grootendorst</a><br><br>
+  <a href="students/name.html">Femke<br> Haaksma</a><br><br>
+  <a href="http://www.karlketamo.com" target="blank_">Karl<br> Ketamo</a><br><br>
+  <a href="students/name.html">George<br> Knegtel</a><br><br>
   <a href="students/name.html">Marijn<br> van der Leeuw</a><br><br>
-  <a href="students/name.html">Renate Ariadne<br> van der Togt</a><br><br>
+  <a href="http://www.joppeput.com" target="blank_">Joppe<br> Put</a><br><br>
   <a href="students/name.html">Tessa<br> van Rijn</a><br><br>
-  <a href="students/name.html">Nita<br> Vera</a><br><br>
-  <a href="students/name.html">Kimmo<br> Virtanen</a><br><br>
-</div>
+  <a href="students/name.html">Muriel<br> Schouten</a><br><br>
+  <a href="http://www.lisestraatsma.nl" target="blank_">Lise<br> Straatsma</a><br><br>
+  <a href="http://www.gilleamtrapenberg.com" target="blank_">Gilleam<br> Trapenberg</a><br><br>
 
-<div class="content">
-
-</div>
-
-
-
+  <a href="students/name.html">Marijn<br> Kuijper</a><br><br>
+  <a href="http://www.anitalensink.nl" target="blank_">Anita<br> Lensink</a><br><br>
+  <a href="students/name.html">Laila<br> Mubarak</a><br><br>
+  <a href="http://www.angenietberkers.nl" target="blank_">Angeniet<br> Berkens</a><br><br>
 
 
 
 </div>
 
+<div class="socialbar">
+  <p>You can follow us on these platforms</p>
+  <a href="http://www.facebook.com/EndlessExpo" target="blank_"><img src="img/icons/facebook.jpg"></a></img>
+  <a href="http://www.instagram.com/EndlessExpo" target="blank_"><img src="img/icons/instagram.jpg"></a></img>
+  <a href="http://www.twitter.com/EndlessExpo" target="blank_"><img src="img/icons/twitter.jpg"></a></img>
+</div>
+
+
+
+</div>
 
 
 
 
 
+<div class="kabklogo">
+  <a href="http://www.kabk.nl" target="blank_"><img src="img/kabklogo.png"></img></a>
+</div>
 
 
 </body>
@@ -114,6 +133,6 @@ Rotterdam<br>
 
 
 <footer>
-  <a href="#top" style="float:right;margin-right:15px;">Back to top</a>
+  <a href="#top" class="scrollToTop" style="float:right;margin-right:15px;">Back to top</a>
   Design and coding by <a href="http://www.marinusschepen.com" target="blank_">Marinus Schepen</a>, <a href="http://www.sararisvaag.com" target="blank_">Sara Risvaag</a> and <a href="http://www.sepusnoordmans.com" target="blank_">Sepus Noordmans</a>
 </footer>
