@@ -325,7 +325,70 @@ p{
 	padding-top:5px;
 }
 
-/* ROTATING STUDENT PHOTO BLOCK */
+/* ROTATING INFO BLOCK */
+.cl-effect-3 a {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  text-decoration:none;
+  color:white;
+}
+
+.cl-effect-3 a span {
+  position: relative;
+  display: inline-block;
+  background: white;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.csstransforms3d .cl-effect-3 a span::before {
+  position: absolute;
+  text-align:center;
+
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color:black;
+  content: attr(data-hover);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+.cl-effect-3 a:hover span,
+.cl-effect-3 a:focus span {
+  -webkit-transform: rotateX(90deg) translateY(-100px);
+  -moz-transform: rotateX(90deg) translateY(-100px);
+  transform: rotateX(90deg) translateY(-100px);
+
+
+}
+
+.csstransforms3d .cl-effect-3 a:hover span::before,
+.csstransforms3d .cl-effect-3 a:focus span::before {
+  background: white;
+  color:black;
+  text-align:center;
+
+}
+
+/* ROTATING STUDENT PHOTO BLOCK SIDEWAYS */
 
 .cl-effect-19 img{
   width: auto;
