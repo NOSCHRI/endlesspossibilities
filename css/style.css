@@ -4,16 +4,60 @@
 }
 
 /* Base styles */
-@font-face {
-	font-family: 'entypo';
-	src:url('../fonts/controls/entypo.eot');
-	src:url('../fonts/controls/entypo.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/controls/entypo.woff') format('woff'),
-		url('../fonts/controls/entypo.ttf') format('truetype'),
-		url('../fonts/controls/entypo.svg#entypo') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+
+
+    #slides {
+      display:none;
+      z-index:999;
+    }
+
+    .container {
+      margin: 5% 10% 5% 10%;
+      position:relative;
+      z-index:998;
+
+    }
+    .bg-container{
+      z-index:997;
+    }
+
+
+
+
+
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+
 
 
 

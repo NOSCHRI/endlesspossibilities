@@ -2,35 +2,26 @@
 <html lang="en">
 
 <head>
+  <style>
+    /* Prevents slides from flashing */
+    #slides {
+      display:;
+    }
+  </style>
 
-
-
-          <style type="text/css" media="screen">
-            .slides_container {
-                width:570px;
-                height:270px;
-            }
-            .slides_container div {
-                width:570px;
-                height:270px;
-                display:block;
-            }
-        </style>
-
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="slides.js"></script>
-
-        <script>
-            $(function(){
-                $("#slides").slides();
-            });
-        </script>
-
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/lightbox.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery.slides.js"></script>
 <script src="js/modernizr.custom.js"></script>
 <script src="js/scrolltop.js"></script>
 
+  <script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 940,
+        height: 528
+      });
+    });
+  </script>
 
 
 
@@ -38,7 +29,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
-<link rel="stylesheet" href="css/gallery.css"/>
 <link rel="icon" type="img/favicon3.png" href="img/favicon3.png"/>
 
 </head>
@@ -62,25 +52,23 @@
     POSSIBILITIES
   </div>
 
+<div class="bg-container">
+
+<div class="container">
+  <div id="slides">
+    <img src="img/slide/slide1.jpg">
+    <img src="img/slide/slide2.jpg">
+    <img src="img/slide/slide3.jpg">
+    <img src="img/slide/slide4.jpg">
+  </div>
+</div>
+</div>
+
+
 <!--- Wrapper ---->
 <div class="info_wrapper">
 
-        <div id="slides">
-            <div class="slides_container">
-                <div>
-                    <img src="http://placehold.it/570x270">
-                </div>
-                <div>
-                    <img src="http://placehold.it/570x270">
-                </div>
-                <div>
-                    <img src="http://placehold.it/570x270">
-                </div>
-                <div>
-                    <img src="http://placehold.it/570x270">
-                </div>
-            </div>
-        </div>
+
 
 
 16.01.2015<br>
