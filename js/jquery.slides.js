@@ -23,11 +23,11 @@
         auto: true,
         swap: true,
         pauseOnHover: true,
-        restartDelay: 2500
+        restartDelay: 1500
       },
       effect: {
         slide: {
-          speed: 500
+          speed: 2000
         },
         fade: {
           speed: 300,

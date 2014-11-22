@@ -11,20 +11,46 @@
       z-index:999;
     }
 
+    .overlay {
+      position:absolute;
+      z-index:1000;
+      left:12%;
+      right:12%;
+      top:0;
+      opacity:0.4;
+    }
+    .overlay img{
+      max-width:100% !important;
+      height:auto;
+      display:block;
+    }
+
     .container {
-      margin: 5% 10% 5% 10%;
+      margin: 5% 10% 5% 8%;
       position:relative;
       z-index:998;
 
     }
     .bg-container{
+      background-color:black;
+      padding-bottom:100px;
       z-index:997;
     }
 
+    .gradient{
+      height:500px;
+      font-size:1px;
+      color:black;
+      background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.78) 22%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(22%,rgba(0,0,0,0.78)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.78) 22%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.78) 22%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.78) 22%,rgba(255,255,255,0) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.78) 22%,rgba(255,255,255,0) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 
 
-
-
+    }
 
     /* For tablets & smart phones */
     @media (max-width: 767px) {
@@ -56,10 +82,22 @@
       .container {
         width: 1170px
       }
+
+
+
+
+
+
+
+    .box span{
+      font-size:20px;
+      display:block;
     }
 
-
-
+    .box img{
+      position:relative;
+      padding-bottom:-1
+    }
 
 
 
@@ -146,6 +184,17 @@ footer a:hover{
 
 }
 
+.endless2 {
+  font-size:38px;
+  bottom:50%;
+  left:0;
+  position:absolute;
+  padding-left:30px;
+  padding-bottom:10px;
+  z-index:999;
+
+}
+
 .possibilities {
 	font-size:38px;
 	bottom:50%;
@@ -159,6 +208,21 @@ footer a:hover{
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+
+.possibilities2 {
+  font-size:38px;
+  bottom:50%;
+  right:0;
+  position:absolute;
+  padding-left:30px;
+  padding-top:15px;
+  z-index:999;
+
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 
 
 /* Elements */
@@ -176,7 +240,8 @@ footer a:hover{
 	width:100%;
 	text-align:center;
 	color:white;
-	font-size:150px;
+	font-size:120px;
+  line-height:120px;
 }
 
 .name_wrapper {
@@ -241,11 +306,9 @@ color:grey;
 	padding:100px 0px 100px 0px;
 	text-align:center;
 }
-
 .socialbar p{
 	font-size:18px;
 }
-
 .socialbar img{
 	padding-top:20px;
 	padding-left:15px;
@@ -258,7 +321,6 @@ color:grey;
 		-ms-transition: all 0.5s ease;
 				transition: all 0.5s ease;
 }
-
 .socialbar img:hover{
     opacity: 1;
     filter: alpha(opacity=100); /* For IE8 and earlier */
@@ -267,9 +329,6 @@ color:grey;
 				-o-transition: all 0.5s ease;
 				-ms-transition: all 0.5s ease;
 						transition: all 0.5s ease;
-}
-
-.kabklogo{
 }
 
 .kabklogo img{
