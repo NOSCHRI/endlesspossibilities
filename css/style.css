@@ -86,23 +86,33 @@
 
 
 
-    .box {
-      font-size:25px;
-      display:block;
-    }
 
-    .box .caption{
-      display:none;
-    }
 
-    .box:hover > div{
-      display:visible;
-    }
 
-    .box img{
-      position:relative;
-      padding-bottom:-1
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -249,6 +259,14 @@ footer a:hover{
   line-height:120px;
 }
 
+
+
+
+
+
+
+
+
 .name_wrapper {
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
@@ -280,6 +298,18 @@ footer a:hover{
 .name_wrapper a:hover{
     color:#e0e0e0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
