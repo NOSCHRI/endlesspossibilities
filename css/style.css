@@ -87,108 +87,17 @@
 
 
 
-  /*    #thumb_wrapper {
-        width:100%;
-        background-color:white;
-        padding-top:100px;
-        margin-bottom:100px;
-        text-align:center;
-        /*font-size:64px;
-        line-height:70px;
-        z-index:999;
-      }
-
-      #thumb_wrapper a{
-        height:auto !important;
-      }
-
-      #thumb_wrapper img.laying{
-        max-width:60%;
-        -webkit-transition: all 0.1s ease;
-        -moz-transition: all 0.1s ease;
-        -o-transition: all 0.1s ease;
-        -ms-transition: all 0.1s ease;
-        transition: all 0.1s ease;
-      }
-      #thumb_wrapper img.laying:hover{
-        -webkit-transition: all 0.1s ease;
-        -moz-transition: all 0.1s ease;
-        -o-transition: all 0.1s ease;
-        -ms-transition: all 0.1s ease;
-        transition: all 0.1s ease;
-
-      }
-      #thumb_wrapper img.laying:hover + p.name{
-        opacity:1;
-        -webkit-transition: all 0.4s ease;
-        -moz-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-        -ms-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-      }
-
-
-
-      #thumb_wrapper img.standing{
-        max-width:35%;
-        -webkit-transition: all 0.1s ease;
-        -moz-transition: all 0.1s ease;
-        -o-transition: all 0.1s ease;
-        -ms-transition: all 0.1s ease;
-        transition: all 0.1s ease;
-      }
-      #thumb_wrapper img.standing:hover{
-        -webkit-transition: all 0.1s ease;
-        -moz-transition: all 0.1s ease;
-        -o-transition: all 0.1s ease;
-        -ms-transition: all 0.1s ease;
-        transition: all 0.1s ease;
-      }
-      #thumb_wrapper img.standing:hover + p.name{
-        opacity:1;
-        -webkit-transition: all 0.4s ease;
-        -moz-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-        -ms-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-      }
-
-      #thumb_wrapper a, p.name{
-        text-decoration:none;
-        color:black;
-      }
-
-      #thumb_wrapper p.name{
-        font-size:18px;
-        opacity:0;
-        margin:0px 0px 0px 0px !important;
-        padding-bottom:100px;
-        -webkit-transition: all 0.4s ease;
-        -moz-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-        -ms-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-      }
-*/
-
-
-
-
-
-
-
-
 
 
 #thumb{
-  width:500px;
-  margin-left:auto;
-  margin-right:auto;
-  float:none;
   text-align:center;
   padding-bottom:150px;
 }
 
+#thumb img.image{
+  width:500px;
+  height:auto;
+}
 
 #thumb p.name{
   font-size:20px;
@@ -224,7 +133,7 @@ transition: all 0.4s ease;
 
 
 
-
+/* --------------------------- BASIC --------------------------- */
 
 
 
@@ -328,7 +237,7 @@ footer a:hover{
 
 
 
-/* Elements */
+/* --------------------------- Elements --------------------------- */
 
 .logoimg {
 	padding-top:50px;
@@ -360,7 +269,6 @@ footer a:hover{
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
 
-    width:100%;
 		background-color:white;
 		color:black;
 		padding-top:100px;
@@ -371,29 +279,6 @@ footer a:hover{
 		line-height:70px;*/
 		z-index:999;
 }
-
-/*#name_wrapper a{
-	color:black;
-	text-decoration:none;
-	-webkit-transition: all 0.7s ease;
-     -moz-transition: all 0.7s ease;
-       -o-transition: all 0.7s ease;
-      -ms-transition: all 0.7s ease;
-          transition: all 0.7s ease;
-}
-
-#name_wrapper a:hover{
-    color:#e0e0e0;
-}*/
-
-
-
-
-
-
-
-
-
 
 
 
@@ -480,7 +365,7 @@ color:grey;
 					transition: all 0.5s ease;
 }
 
-/* Typography */
+/* --------------------------- Typography --------------------------- */
 
 h1 {
 	font-size:72px;
@@ -630,107 +515,3 @@ p{
   text-align:center;
 
 }
-
-/* ROTATING STUDENT PHOTO BLOCK SIDEWAYS */
-
-.cl-effect-19 img{
-  width: auto;
-  height: auto;
-}
-
-.cl-effect-19 a {
-  line-height: 2em;
-  margin: 15px;
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  perspective: 800px;
-
-}
-
-.cl-effect-19 a span {
-  position: relative;
-  display: inline-block;
-  padding: 0px 0px 0px 0px;
-  background: white;
-  -webkit-transition: -webkit-transform 0.4s, background 0.4s;
-  -moz-transition: -moz-transform 0.4s, background 0.4s;
-  transition: transform 0.4s, background 0.4s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform-origin: 50% 50% -250px;
-  -moz-transform-origin: 50% 50% -250px;
-  transform-origin: 50% 50% -250px;
-}
-
-.csstransforms3d .cl-effect-19 a span::before {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  background: #b53a2d;
-  content: attr(data-hover);
-  -webkit-transition: background 0.4s;
-  -moz-transition: background 0.4s;
-  transition: background 0.4s;
-  -webkit-transform: rotateY(90deg);
-  -moz-transform: rotateY(90deg);
-  transform: rotateY(90deg);
-  -webkit-transform-origin: 0 50%;
-  -moz-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  pointer-events: none;
-}
-
-.cl-effect-19 a:hover span,
-.cl-effect-19 a:focus span {
-  background: #b53a2d;
-  -webkit-transform: rotateY(-90deg);
-  -moz-transform: rotateY(-90deg);
-  transform: rotateY(-90deg);
-}
-
-.csstransforms3d .cl-effect-19 a:hover span::before,
-.csstransforms3d .cl-effect-19 a:focus span::before {
-  background: white;
-  color:black;
-}
-
-
-
-
-/* Line tryouts
-
-
-.cross-LU{
-	left:0;
-	top:0;
-	fill:none;
-	stroke:white;
-	stroke-width:3;
-}
-
-.cross-RU{
-	right:0;
-	top:0;
-	fill:none;
-	stroke:white;
-	stroke-width:3;
-}
-
-.cross-RB{
-	right:0;
-	bottom:0;
-	fill:none;
-	stroke:white;
-	stroke-width:3;
-}
-
-.cross-LB{
-	left:0;
-	bottom:0;
-	fill:none;
-	stroke:white;
-	stroke-width:3;
-}*/
