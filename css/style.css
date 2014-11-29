@@ -3,54 +3,53 @@
     src: url(favorit-dinamo-webfont.woff);
 }
 
-/* Base styles */
+/* --------------------------- SLIDESHOW --------------------------- */
 
 
-    #slides {
-      display:none;
-      z-index:999;
-    }
 
-    .overlay {
-      position:absolute;
-      z-index:1000;
-      left:12%;
-      right:12%;
-      top:0;
-      opacity:1;
-    }
-    .overlay img{
-      max-width:100% !important;
-      height:auto;
-      display:block;
-    }
+img.overlay {
+  position:absolute;
+  z-index:1000;
+  max-width:80% !important;
+  opacity:1;
 
-    .container {
-      margin: 5% 10% 5% 8%;
-      position:relative;
-      z-index:998;
-
-    }
-    .bg-container{
-      background-color:black;
-      padding-bottom:100px;
-      z-index:997;
-    }
-
-    .gradient{
-      height:500px;
-      font-size:1px;
-      color:black;
-      background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.78) 22%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(22%,rgba(0,0,0,0.78)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.78) 22%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.78) 22%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-      background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.78) 22%,rgba(255,255,255,0) 100%); /* IE10+ */
-      background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.78) 22%,rgba(255,255,255,0) 100%); /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+img.overlay{
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 
-    }
+
+#slides {
+  display:none;
+  z-index:999;
+  padding-top:0.5%;
+  top: 50%;
+  left: 50%;
+}
+
+img.slide{
+
+}
+.container {
+  margin-left:5%;
+  margin-right:5%;
+  z-index:998;
+
+}
+.bg-container{
+  background-color:black;
+  padding-bottom:150px;
+  z-index:997;
+}
+
+
 
     /* For tablets & smart phones
     @media (max-width: 767px) {
@@ -80,13 +79,7 @@
         width: 1170px
       }*/
 
-
-
-
-
-
-
-
+/* --------------------------- THUMBNAILS --------------------------- */
 
 
 #thumb{
@@ -123,20 +116,7 @@ transition: all 0.4s ease;
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* --------------------------- BASIC --------------------------- */
-
-
-
 
 
 
@@ -177,7 +157,7 @@ footer a:hover{
 	color:white;
 }
 
-/* Navbar */
+/* --------------------------- NAVBAR --------------------------- */
 
 .navbar {
 	padding-top:10px;
@@ -209,7 +189,8 @@ footer a:hover{
 
 
 
-/* Logo Navigation */
+/* --------------------------- LOGO --------------------------- */
+
 
 .endless {
 	font-size:38px;
@@ -243,11 +224,6 @@ footer a:hover{
 
 /* --------------------------- Elements --------------------------- */
 
-.logoimg {
-	padding-top:50px;
-	text-align:center;
-	visibility:hidden	;
-}
 
 .info_wrapper{
 	padding-top:200px;
@@ -261,33 +237,21 @@ footer a:hover{
 }
 
 
-
-
-
-
-
-
-
 #name_wrapper {
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
+  -webkit-column-count:2;
+  -moz-column-count:2;
+  column-count:2;
 
-		background-color:white;
-		color:black;
-		padding-top:100px;
-		margin-bottom:100px;
-		text-align:center;
-		text-decoration:none;
-		/*font-size:64px;
-		line-height:70px;*/
-		z-index:999;
+	background-color:white;
+	color:black;
+	padding-top:100px;
+	margin-bottom:100px;
+	text-align:center;
+	text-decoration:none;
+	/*font-size:64px;
+	line-height:70px;*/
+	z-index:999;
 }
-
-
-
-
-
 
 .content {
 	width: 50%;
@@ -312,6 +276,9 @@ color:grey;
 			-ms-transition: all 0.5s ease;
 					transition: all 0.5s ease;
 }
+
+/* --------------------------- SOCIAL BAR --------------------------- */
+
 
 .socialbar {
 	padding:100px 0px 100px 0px;
