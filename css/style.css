@@ -188,21 +188,25 @@ footer a:hover{
 }
 
 .navbar a {
-	color:white;
+	color:grey;
 	text-decoration:none;
-	margin-left:20px;
+	margin-left:10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar a:hover {
 	color:white;
-	padding-bottom:5px;
-	border-bottom:1px solid white;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.navbar a:active {
-	color:white;
-	border-bottom:1px solid white;
-}
 
 
 /* Logo Navigation */
