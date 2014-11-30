@@ -718,7 +718,7 @@ line-height:12px;
 /* --------------------------- MEDIA LEVEL#3 - LARGE --------------------------- */
 @media screen and (min-width: 640px) and (max-width: 1024px) {
 
-  .overlay, .navbar, .name_wrapper, .info_wrapper, .endless, .possibilities,
+  .navbar, .name_wrapper, .info_wrapper, .endless, .possibilities,
   .content{
     display:none;
   }
@@ -726,6 +726,18 @@ line-height:12px;
   #simplified{
     display:block;
   }
+
+  .overlay{
+    position:absolute !important;
+    display:block;
+  }
+
+  img.overlay{
+    top:0;
+    margin-top:30%;
+  }
+
+
 
   #slides {
     display:none;
