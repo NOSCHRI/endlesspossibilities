@@ -491,6 +491,37 @@ p{
 
 }
 
+.portfolio{
+  font-size:50px !important;
+  text-align:center;
+  margin-top:25%;
+  margin-bottom:25%;
+  height:10%;
+}
+
+.portfolio a{
+  position:fixed;
+  bottom:0;
+  font-size:20px;
+
+  text-decoration:none;
+  color:grey;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.portfolio a:hover{
+  color:white;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 
 
 /* --------------------------- SIMPLIFIED --------------------------- */
