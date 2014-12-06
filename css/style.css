@@ -96,9 +96,11 @@ img.slide{
   /*font-size:64px;
   line-height:70px;*/
   z-index:999;
+
 }
 
 #thumb{
+
   text-align:center;
   padding-bottom:150px;
 }
@@ -155,22 +157,21 @@ body {
 }
 
 footer{
-	font-size:12px;
-	text-align:left;
-	margin-left:15px;
-	padding-top:10px;
-	padding-bottom:10px;
-	color:grey;
+  font-size:12px;
+  text-align:left;
+  margin-left:15px;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:grey;
 }
 
 footer a{
-	text-decoration:none;
-	color:grey;
+  text-decoration:none;
+  color:grey;
 }
 
 footer a:hover{
-	border-bottom: 1px solid white;
-	color:white;
+  color:white;
 }
 
 /* --------------------------- NAVBAR --------------------------- */
@@ -267,11 +268,11 @@ footer a:hover{
 
 .content a{
 	text-decoration:none;
-	color:white;
+	color:grey;
 }
 
 .content a:hover{
-color:grey;
+color:white;
 	-webkit-transition: all 0.5s ease;
 		-moz-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
@@ -864,11 +865,6 @@ line-height:12px;
     opacity:1;
     text-decoration:none;
   }
-
-
-
-
-
   footer{
     font-size:10px;
     line-height:12px;

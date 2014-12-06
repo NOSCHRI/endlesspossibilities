@@ -4,12 +4,42 @@
 <head>
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(52.096346, 4.307852);
+  var mapOptions = {
+    zoom: 16,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
 <title>About Endless Possibilities</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
 <link rel="icon" type="img/favicon3.png" href="img/favicon3.png"/>
+<style>
+#map-canvas {
+  margin-top:100px;
+  width: 700px;
+  height: 400px;
+  background-color: #CCC;
 
+}
+</style>
 </head>
 
 <body>
@@ -17,9 +47,7 @@
 
 <!--- Navigation ---->
 <div class="navbar">
-  <nav class="cl-effect-2">
-    <a href="index.html"><span data-hover="Back">Back</span></a>
-  </nav>
+    <a href="index.html">Back</a>
 </div>
 
 
@@ -34,14 +62,23 @@
 
 <div class="content">
 <div style="height:100px;"></div>
-<p style="font-size:38px;line-height:38px;">
+<p style="font-size:38px;line-height:42px;">
 For more news follow us on <a href="http://www.facebook.com/EndlessExpo" target="blank_">Facebook</a>. We also have an <a href="http://www.instagram.com/EndlessExpo" target="blank_">Instagram</a> and you can read our updates on the <a href="http://www.twitter.com/EndlessExpo" target="blank_">Twitter</a> page.
 </p>
 <div style="height:100px;"></div>
-<p style="font-size:38px;line-height:38px;">
-The exhibition will be held at Kunsthal Rotterdam<br>
-Van Maanenkade 60<br>
-2516LM Den Haag<br>
+<p style="font-size:38px;line-height:42px;">
+The exhibition will be held at ANNA@RW47<br>
+Raamweg 47<br>
+2596 HN Den Haag<br>
+
+
+<div id="map-canvas"></div>
+
+
+
+
+
+
 </p>
 <div style="height:100px;"></div>
 <div class="kabklogo">
@@ -55,7 +92,7 @@ Van Maanenkade 60<br>
 
 <footer style="text-align:left !important;padding-top:50px;">
   Design by <a href="http://www.marinusschepen.com" target="blank_">Marinus Schepen</a>, <a href="http://www.sararisvaag.com" target="blank_">Sara Risvaag</a> and <a href="http://www.sepusnoordmans.com" target="blank_">Sepus Noordmans</a>.
-  Typeface Favorit by Johannes Breyer and Fabian Harb
+  Typeface Favorit by Johannes Breyer and Fabian Harb.
 </footer>
 
 </body>
