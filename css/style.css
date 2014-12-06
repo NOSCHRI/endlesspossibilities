@@ -96,6 +96,8 @@ img.slide{
   /*font-size:64px;
   line-height:70px;*/
   z-index:999;
+  margin-left:-10px;
+  margin-right:-10px;
 
 }
 
@@ -181,7 +183,7 @@ footer a:hover{
 	padding-right:15px;
 	top:0;
 	right:0;
-	position:absolute;
+	position:fixed;
 }
 
 .navbar a {
@@ -294,23 +296,21 @@ color:white;
 	padding-top:20px;
 	padding-left:15px;
 	padding-right:15px;
-	opacity:0.5;
-	filter: alpha(opacity=50); /* For IE8 and earlier */
+	opacity:1;
 -webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 		-o-transition: all 0.5s ease;
 		-ms-transition: all 0.5s ease;
 				transition: all 0.5s ease;
 }
-.socialbar img:hover{
+/*.socialbar img:hover{
     opacity: 1;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
 		-webkit-transition: all 0.5s ease;
 			-moz-transition: all 0.5s ease;
 				-o-transition: all 0.5s ease;
 				-ms-transition: all 0.5s ease;
 						transition: all 0.5s ease;
-}
+}*/
 
 .kabklogo img{
 	padding-top:40px;
@@ -321,8 +321,7 @@ color:white;
   display: block;
   margin-left: auto;
   margin-right: auto;
-	opacity:0.5;
-	filter: alpha(opacity=50); /* For IE8 and earlier */
+	opacity:1;
 -webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 		-o-transition: all 0.5s ease;
@@ -331,15 +330,14 @@ color:white;
 
 }
 
-.kabklogo img:hover{
+/*.kabklogo img:hover{
 	opacity: 1;
-	filter: alpha(opacity=100); /* For IE8 and earlier */
 	-webkit-transition: all 0.5s ease;
 		-moz-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
 			-ms-transition: all 0.5s ease;
 					transition: all 0.5s ease;
-}
+}*/
 
 /* --------------------------- Typography --------------------------- */
 
