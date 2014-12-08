@@ -17,7 +17,7 @@ body img{
   display:block;
   margin-left:auto;
   margin-right:auto;
-  max-height:800px;
+  max-width:80%;
   padding-bottom:20px;
 }
 
@@ -42,6 +42,37 @@ footer a:hover{
   color:white;
 }
 
+/* --------------------------- NAVBAR --------------------------- */
+
+.navbar {
+  padding-top:10px;
+  padding-right:15px;
+  top:0;
+  right:0;
+  position:fixed;
+  z-index:1100;
+}
+
+.navbar a {
+  color:grey;
+  text-decoration:none;
+  margin-left:10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar a:hover {
+  color:white;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 /* --------------------------- LOGO --------------------------- */
 
 
@@ -54,7 +85,7 @@ footer a:hover{
   position:fixed;
   padding-left:30px;
   padding-bottom:10px;
-  z-index:0;
+  z-index:-1;
 }
 
 .endless a:hover{
@@ -122,7 +153,7 @@ footer a:hover{
 
 /* --------------------------- MEDIA LEVEL#1 - SMALL --------------------------- */
 @media screen and (max-width: 480px) {
-  body img, footer{
+  body img, footer, .navbar{
     display:none;
   }
 
@@ -167,7 +198,7 @@ body{
 
 /* --------------------------- MEDIA LEVEL#2 - MEDIUM --------------------------- */
 @media screen and (min-width: 480px) and (max-width: 640px) {
-  body img, footer{
+  body img, footer, .navbar{
     display:none;
   }
 
@@ -212,6 +243,10 @@ body{
 
 /* --------------------------- MEDIA LEVEL#3 - LARGE --------------------------- */
 @media screen and (min-width: 640px) and (max-width: 1024px) {
+  .navbar {
+    display:none;
+  }
+
   body img{
     width:100%;
   }
