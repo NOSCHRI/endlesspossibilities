@@ -8,13 +8,9 @@
 
 
 img.overlay {
-  position:absolute;
-  z-index:1000;
+  position:absolute ;
+  z-index:999;
   max-width:80% !important;
-  opacity:1;
-
-}
-img.overlay{
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -22,21 +18,20 @@ img.overlay{
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
+  -webkit-transform: translate3d(-50%, -50%, 0);
 
+}
 
 
 #slides {
   display:none;
-  z-index:999;
+  z-index:500;
   padding-top:0.5%;
   top: 50%;
   left: 50%;
 }
 
-img.slide{
 
-}
 .container {
   margin-left:5%;
   margin-right:5%;
@@ -51,33 +46,6 @@ img.slide{
 
 
 
-    /* For tablets & smart phones
-    @media (max-width: 767px) {
-
-      .container {
-        width: auto
-      }
-    }
-
-    /* For smartphones
-    @media (max-width: 480px) {
-      .container {
-        width: auto
-      }
-    }
-
-    /* For smaller displays like laptops
-    @media (min-width: 768px) and (max-width: 979px) {
-      .container {
-        width: 724px
-      }
-    }
-
-    /* For larger displays
-    @media (min-width: 1200px) {
-      .container {
-        width: 1170px
-      }*/
 
 /* --------------------------- THUMBNAILS --------------------------- */
 
